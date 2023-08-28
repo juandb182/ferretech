@@ -112,4 +112,8 @@ Route::get('/res', function(){
     return 5;
 });
 
+Route::get('/reqs', function(){
+    return 5;
+});
+
 
