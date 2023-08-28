@@ -108,6 +108,8 @@ Route::get('/download/pdf', [PDFController::class, 'DescargarCotizacionPDF']);
 
 
 
-
+Route::resource('/res', function(){
+    return 'res';
+});
 
 
