@@ -75,8 +75,7 @@ Route::get('/searchGeneral', [ConsultaFerreventeGeneral::class, 'search']);
 //busqueda rapida
 Route::post('/myurl', [ConsultaFerrevente1::class, 'shows']);
 
-//busqueda de usuario en users.index
-Route::get('/searchUser', [UsersController::class, 'search']);
+
 
 
 
@@ -106,14 +105,5 @@ Route::get('/deleteAll', [FerreDataController::class, 'destroyAll'])->middleware
 Route::get('/imprimirPDF', [PDFController::class, 'ImprimirPDF']);
 Route::get('/download/pdf', [PDFController::class, 'DescargarCotizacionPDF']);
 
-
-
-Route::get('/res', function(){
-    return 5;
-});
-
-Route::get('/reqs', function(){
-    return 5;
-});
 
 
