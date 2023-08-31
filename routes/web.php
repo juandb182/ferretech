@@ -76,7 +76,9 @@ Route::get('/searchGeneral', [ConsultaFerreventeGeneral::class, 'search']);
 Route::post('/myurl', [ConsultaFerrevente1::class, 'shows']);
 
 
-
+Route::get('/s', function(){
+    return 's';
+});
 
 
 Route::resource('/users', UsersController::class)->middleware(CheckUserType::class);
